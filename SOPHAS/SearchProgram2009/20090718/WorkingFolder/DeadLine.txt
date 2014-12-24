@@ -1,0 +1,19 @@
+01/01/1900 Rolling
+01/01/1901 Rolling Admisssions
+01/01/1902 Contact Student Affairs
+01/01/1903 N/A
+01/01/1904 Check with department
+01/01/1905 See applicant notes
+
+
+
+
+WHERE     (ProgramName LIKE '%peace%') OR
+                      (DegreeName LIKE '%peace%') OR
+                      (DegreeName LIKE '%peace%')
+
+
+UPDATE    Sheet1
+SET              SchoolID = 35
+WHERE     (SchoolName = 
+'University of Florida College of Public Health and Health Professions')

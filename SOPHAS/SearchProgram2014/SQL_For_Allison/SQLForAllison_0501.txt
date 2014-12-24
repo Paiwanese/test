@@ -1,0 +1,8 @@
+SELECT ms.MemberName,deg.standarddegreeName, sp.StandardProgramName,dc.ConcentrationName, 
+case when dc.sophasenabled = 1 then 'Yes' when dc.sophasenabled = 0 then 'No' else 'Undefined'end as SOPHAS
+FROM  Designations d
+JOIN members ms on ms.memberID = d.memberID
+LEFT JOIN StandardPrograms sp on sp.StandardProgramID = d.StandardProgramID
+JOIN StandardDegrees deg on deg.StandardDegreeID = d.StandardDegreeID
+JOIN Concentrations dc on d.DesignationID =dc.DesignationID
+ORDER by MemberName

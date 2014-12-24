@@ -1,0 +1,54 @@
+
+<cfquery name="GetConcenttations" datasource="#DSN#">
+SELECT DISTINCT cs.ConcentrationID, c.ConcentrationName,d.ProgramName, d.degreeName, ms.MemberName
+FROM ConcentrationSearchTags cs
+JOIN Concentrations c on cs.ConcentrationID = c.ConcentrationID
+JOIN ConcentrationDetails cd on c.ConcentrationID = cd.ConcentrationID
+JOIN Designations d on d.designationID = c.designationID
+JOIN members ms on ms.memberID = d.memberID
+where C.ConcentrationStatus = 1
+AND SearchEnabled = 1
+ORDER BY ms.memberName, d.ProgramName, d.DegreeName
+</cfquery>
+
+<cfquery name="GetTags" datasource="#DSN#">
+SELECT SearchTagID, SearchTagName, SearchTagExplanation
+FROM SearchTags
+Order by SearchTagName
+</cfquery>
+
+
+<table border="1">
+<tr>
+<td>ConcentrationID</td>
+<td>Member Name</td>
+<td>Program Name</td>
+<td>Degree Name</td>
+<td>Concentratio nName</td>
+<cfoutput query="GetTags">
+<td>#SearchTagName#</td></cfoutput>
+</tr>
+
+<cfoutput query="GetConcenttations">
+<tr>
+<td>#ConcentrationID#</td>
+<td>#MemberName#</td>
+<td>#ProgramName#</td>
+<td>#DegreeName#</td>
+<td>#ConcentrationName#</td>
+
+<cfquery name="GetConTags" datasource="#DSN#">
+SELECT  ConcentrationID,SearchTagID
+FROM ConcentrationSearchTags
+where ConcentrationID = #GetConcenttations.ConcentrationID#
+</cfquery>
+
+ <cfloop query="GetTags">
+ 
+ <td><cfif GetContags.recordcount neq 0><cfif Listfind(ValueList(GetConTags.SearchTagID), GetTags.SearchTagID)>Yes</cfif><cfelse>&nbsp;</cfif></td>
+ 
+ </cfloop>
+ 
+ </tr>
+</cfoutput>
+</table>

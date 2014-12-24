@@ -1,0 +1,24 @@
+
+SELECT ss.LiaisonschoolID, rtrim(ltrim(d.degreeName)) as degreename, rtrim(ltrim(d.programName)) as programName,
+rtrim(ltrim(dc.ConcentrationName)) as ConcentrationName, t.fullterm as Term, at.applicantType, da.softdeadline+' 11:59:59 PM', da.harddeadline+' 11:59:59 PM',
+dep.DepartmentName
+FROM  Designations d
+JOIN memberschools ms on ms.memberschoolID = d.memberschoolID
+JOIN SOPHASSchools ss on ss.memberschoolID = ms.memberschoolID
+JOIN DegreeTypes deg on deg.degreeTypeID = d.DegreeTypeID
+JOIN Concentrations dc on d.DesignationID =dc.DesignationID
+JOIN ConcentrationTerms da on dc.ConcentrationID = da.ConcentrationID
+JOIN ApplicantTypes at on at.applicantTypeID = da.applicantTypeID
+JOIN Terms t on t.TermID = da.TermID
+JOIN ConcentrationDetails csd on csd.ConcentrationID = dc.ConcentrationID
+JOIN Departments dep on dep.DepartmentID = csd.DepartmentID
+LEFT JOIN ConcentrationHarvardOptions ho on ho.concentrationID = dc.concentrationID
+LEFT JOIN HarvardOptions op on op.optionID = ho.optionID
+LEFT JOIN ConcentrationHarvardAreasOfInterest hai on hai.concentrationID = dc.concentrationID
+LEFT JOIN HarvardAreasOfInterest area on area.areaofinterestID = hai.areaofinterestID
+Where  csd.sophasStatus = 1
+AND da.sophasstatus = 1
+AND d.DesignationStatus = 1
+AND dc.concentrationStatus = 1
+AND ms.MemberschoolID <> 1002
+order by ms.memberschoolName, DegreeName, ProgramName, concentrationName

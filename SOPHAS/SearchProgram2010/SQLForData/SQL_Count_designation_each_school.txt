@@ -1,0 +1,12 @@
+SELECT     d.memberschoolid, m.memberschoolname, count (d.memberschoolid) numbers
+FROM         Designations d
+Join Memberschools m on m.memberschoolID = d.memberschoolID
+JOIN SOPHASSchools ss on ss.memberschoolID = m.memberschoolID
+Where designationStatus = 1
+group by d.memberschoolID, m.memberschoolname
+
+Select distinct d.memberschoolID, m.memberschoolname 
+from Designations d
+JOIN memberschools m  on d.memberschoolID = m.memberschoolID
+JOIN SOPHASSchools ss on ss.memberschoolID = m.memberschoolID
+Order by memberschoolID

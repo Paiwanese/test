@@ -1,0 +1,5 @@
+SELECT OrganizationName, sa.QuestionID,QuestionText, AnswerText
+FROM SOPHASAnswers sa
+JOIN SOPHASQuestions sq on sa.questionID = sq.questionID
+JOIN organizations o on o.organizationID = sa.MemberID
+ORDER BY MemberID, QuestionID

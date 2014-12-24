@@ -1,0 +1,18 @@
+SELECT d.DesignationID,dc.concentrationID, da.concentrationTermID as termID,  ms.memberschoolName, d.degreeName, d.programName,
+dc.ConcentrationName, t.fullterm as Term, at.applicantType, da.softdeadline, da.harddeadline,
+dep.DepartmentName
+FROM  Designations d
+JOIN memberschools ms on ms.memberschoolID = d.memberschoolID
+JOIN DegreeTypes deg on deg.degreeTypeID = d.DegreeTypeID
+JOIN Concentrations dc on d.DesignationID =dc.DesignationID
+JOIN ConcentrationTerms da on dc.ConcentrationID = da.ConcentrationID
+JOIN ApplicantTypes at on at.applicantTypeID = da.applicantTypeID
+JOIN Terms t on t.TermID = da.TermID
+JOIN ConcentrationDetails csd on csd.ConcentrationID = dc.ConcentrationID
+JOIN Departments dep on dep.DepartmentID = csd.DepartmentID
+Where csd.sophasStatus = 1
+AND da.sophasstatus = 1
+AND d.DesignationStatus = 1
+AND dc.concentrationStatus = 1
+
+order by ms.memberschoolName, DegreeName, ProgramName, concentrationName

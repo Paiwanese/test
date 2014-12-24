@@ -1,0 +1,15 @@
+SELECT ms.memberschoolname, d.programName, c.concentrationName, d.degreeName
+FROM         Concentrations c
+JOIN Designations d on d.DesignationID = c.designationID
+JOIN concentrationDetails cd on cd.concentrationID = c.concentrationID
+JOIN MemberSchools ms on ms.memberSchoolID = d.memberSchoolID
+JOIN DegreeTypes deg on deg.degreeTypeID = d.DegreeTypeID
+Where  d.DesignationID IS NOT NULL
+AND c.ConcentrationID in(SELECT    Distinct  ConcentrationID
+FROM   ConcentrationTerms)
+AND DesignationStatus = 1
+AND c.concentrationStatus = 1
+AND cd.DegreeLevel = 2
+AND cd.sophasstatus =1
+And programName  like '%Biost%'
+order by ms.memberschoolname

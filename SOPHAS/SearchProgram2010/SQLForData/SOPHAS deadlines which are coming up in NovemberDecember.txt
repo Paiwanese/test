@@ -1,0 +1,25 @@
+
+
+Can you run me a query of all SOPHAS deadlines which are coming up in November/December?
+
+
+SELECT c.concentrationID,  ms.MemberschoolName, d.degreeName,
+d.programName, c.concentrationName,t.fullterm,  a.applicanttype, ct.HardDeadline,
+ct.SoftDeadline,cd.sophasstatus, ct.SOPHASStatus as IncludeApplicantsPortal, 
+ct.ExpireYesNo
+FROM ConcentrationTerms ct 
+JOIN Concentrations c on ct.concentrationID = c.concentrationID
+JOIN designations d on d.designationID = c.designationID
+JOIN MemberSchools ms on ms.memberschoolID = d.memberschoolID
+JOIN concentrationDetails cd on cd.concentrationID = c.concentrationID
+JOIN terms t on t.termID = ct.termID
+JOIN applicanttypes a on a.ApplicantTypeID = ct.ApplicantTypeID
+WHERE d.designationStatus = 1
+AND c.concentrationStatus = 1
+AND cd.SearchEnabled = 1
+AND (ct.expireYesNo IS NULL OR ct.expireYesNo = 0) 
+AND ((HardDeadline LIKE '11/%/2010') OR
+                      (SoftDeadline LIKE '11/%/2010')OR
+                      (HardDeadline LIKE '12/%/2010')OR
+                      (SoftDeadline LIKE '12/%/2010'))
+order by ms.memberschoolname, d.degreeName, d.programName, c.concentrationName

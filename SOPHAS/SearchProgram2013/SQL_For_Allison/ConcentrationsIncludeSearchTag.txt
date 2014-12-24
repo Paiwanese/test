@@ -1,0 +1,16 @@
+SELECT SearchTagname, dc.concentrationID, ms.memberName, d.degreeName, d.programName,
+dc.ConcentrationName, dep.DepartmentName
+FROM  Designations d
+JOIN members ms on ms.memberID = d.memberID
+JOIN SOPHAS ss on ss.memberID = ms.memberID
+JOIN DegreeTypes deg on deg.degreeTypeID = d.DegreeTypeID
+JOIN Concentrations dc on d.DesignationID =dc.DesignationID
+LEFT JOIN ConcentrationSearchTags cst on cst.ConcentrationID = dc.ConcentrationID
+LEFT JOIN SearchTags st on st.SearchTagID = cst.SearchTagID
+JOIN ConcentrationDetails cd on cd.ConcentrationID = dc.ConcentrationID
+JOIN Departments dep on dep.DepartmentID = cd.DepartmentID
+LEFT JOIN ConcentrationHarvardOptions ho on ho.concentrationID = dc.concentrationID
+LEFT JOIN HarvardOptions op on op.optionID = ho.optionID
+Where dc.concentrationStatus = 1
+
+order by st.SearchTagname, ms.memberName, DegreeName, ProgramName, concentrationName

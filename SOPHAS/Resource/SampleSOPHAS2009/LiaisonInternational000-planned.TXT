@@ -1,0 +1,4 @@
+20097654321|21890|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Fall|Quarter|2007|SEM: Mentor Development|EPFA 507|3|Graduate|5|Other|1.00|1|Not Applicable
+20097654321|21893|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Fall|Quarter|2007|Developmental/Adult Learning|EPFA 520|3|Graduate|5|Other|4.00|1|Not Applicable
+20097654321|21895|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Fall|Quarter|2007|Top: Integrative Health|PHE 510|3|Graduate|4|Social/Behavioral Science|4.00|1|Not Applicable
+20097654321|21897|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Summer|Quarter|2007|Intern: Josiah Hill Clinic|PHE 504|3|Graduate|5|Other|3.00|1|Not Applicable

@@ -1,0 +1,11 @@
+SELECT     P.ProgramID, P.SchoolName, P.DegreeName , d.degreeName as validateDegreeName, P.DegreeID,
+ P.DegreeType, P.JointDegree, P.DistanceLearning, P.ProgramName, P.Concentration, 
+P.AdditionalAreasHarvardOnly, P.OptionalOfferingHarvardOnly, P.SearchTag1,
+ P.SearchTag2, P.SearchTag3, P.Department, P.SOPHASYesNo, t.Term, P.TermID, P.ApplicantType,
+P.USorInternational as USIntl, P.SoftDeadline, P.HardDeadline, P.Deadline, P.GRE,
+ P.GMAT, P.MAT, P.LSAT, P.MCAT, P.DAT, P.PCAT, P.Note, P.Description, P.DepartmentLink, 
+P.WhereToSend
+FROM         Programs p
+Join degrees d on P.degreeID =d.degreeID
+Join Terms T on t.termID =p.termID
+order by schoolName

@@ -1,0 +1,12 @@
+
+
+
+If term has only soft deadline and soft deadline has passed. Should we mark term is closed?
+
+
+In cycle eight, all programs must have a hard deadline so this should never happen. If there are programs in cycle seven with no hard deadline, please do not close them.  The programs will do it when they need to.
+
+
+
+
+

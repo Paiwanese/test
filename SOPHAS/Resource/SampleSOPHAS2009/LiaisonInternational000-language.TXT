@@ -1,0 +1,2 @@
+20097654321|Spanish|High|High|High|High
+20097654321|French|Low|Low|Low|Low

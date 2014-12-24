@@ -1,0 +1,25 @@
+SELECT rtrim(ltrim(d.degreeName)) as degreename, rtrim(ltrim(d.programName)) as programName,
+rtrim(ltrim(dc.ConcentrationName)) as ConcentrationName,dc.concentrationID, st.searchtagname, cd.Dualdegree, cd.SearchEnabled, cd.DistanceLearningStatus, 
+cd.SOPHASStatus, cd.PeaceCorpsProgram, cd.AcceleratedProgram, cd.GRE, cd.GMAT, cd.MAT, cd.LSAT, cd.MCAT, cd.DAT, cd.PCAT,
+cd.DepartmentLink, cd.Description, cd.Note,t.fullterm as Term, at.applicantType, da.softdeadline+' 11:59:59 PM',
+da.harddeadline+' 11:59:59 PM', dep.DepartmentName
+FROM  Designations d
+JOIN memberschools ms on ms.memberschoolID = d.memberschoolID
+JOIN DegreeTypes deg on deg.degreeTypeID = d.DegreeTypeID
+JOIN Concentrations dc on d.DesignationID =dc.DesignationID
+JOIN ConcentrationDetails cd on cd.ConcentrationID = dc.ConcentrationID
+JOIN ConcentrationTerms da on dc.ConcentrationID = da.ConcentrationID
+JOIN ApplicantTypes at on at.applicantTypeID = da.applicantTypeID
+JOIN concentrationSearchTags cst on cst.concentrationID = dc.ConcentrationID
+JOIN SearchTags st on st.SearchTagID = cst.SearchtagID
+JOIN Terms t on t.TermID = da.TermID
+JOIN ConcentrationDetails csd on csd.ConcentrationID = dc.ConcentrationID
+LEFT JOIN Departments dep on dep.DepartmentID = csd.DepartmentID
+LEFT JOIN ConcentrationHarvardOptions ho on ho.concentrationID = dc.concentrationID
+LEFT JOIN HarvardOptions op on op.optionID = ho.optionID
+LEFT JOIN ConcentrationHarvardAreasOfInterest hai on hai.concentrationID = dc.concentrationID
+LEFT JOIN HarvardAreasOfInterest area on area.areaofinterestID = hai.areaofinterestID
+Where  d.DesignationStatus = 1
+AND dc.concentrationStatus = 1
+AND ms.MemberschoolID = 1016
+order by DegreeName, ProgramName, concentrationName,dc.ConcentrationID, searchtagname

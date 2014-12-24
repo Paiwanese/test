@@ -1,0 +1,6 @@
+20097654321|276|Are you planning to attend full time or part time?|Full Time
+20097654321|277|Please indicate where your mother went to college|Boston College
+20097654321|278|Please indicate where your father went to college|Yale University
+20097654321|279|Other School 1|
+20097654321|280|Other School 2|
+20097654321|281|Other School 3|

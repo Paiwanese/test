@@ -1,0 +1,15 @@
+
+DesignationAttributeID	int	Unchecked
+
+DesignationConcentrationID	int	Checked
+
+TermID	int	Checked
+
+ApplicantTypeID	int	Checked
+
+HardDeadlineID	int	Checked
+
+SoftDeadlineID	int	Checked
+
+sophas_department_id	int	Checked
+	

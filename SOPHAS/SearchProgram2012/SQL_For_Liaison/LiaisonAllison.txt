@@ -1,0 +1,37 @@
+
+
+By close of business tomorrow, can you export for me out of the search database for FALL 2010 only and only US or Both for applicant type
+1)	Name of school
+2)	Name of degree
+3)	Name of program
+4)	Name of concentration
+5)	Distance learning “yes” or “no” or “both”
+6)	1 year or less “yes” or “no”
+
+What I’m trying to find out is out of xyz possible degrees offered by schools, xyz % are offered by distance learning and xyz % are offered in a 1 year or less format.  I’ll do the calculations but I need the raw data.
+
+
+
+SELECT ss.LiaisonschoolID, d.degreeName, d.programName,
+dc.ConcentrationName, t.fullterm as Term, at.applicantType, ct.softdeadline+' 11:59:59 PM' as SoftDeadline, ct.harddeadline+' 11:59:59 PM' as HardDeadline,
+dep.DepartmentName, area.areaofinterestName, op.OptionName
+FROM  Designations d
+JOIN memberschools ms on ms.memberschoolID = d.memberschoolID
+JOIN SOPHASSchools ss on ss.memberschoolID = ms.memberschoolID
+JOIN DegreeTypes deg on deg.degreeTypeID = d.DegreeTypeID
+JOIN Concentrations dc on d.DesignationID =dc.DesignationID
+JOIN ConcentrationTerms ct on dc.ConcentrationID = ct.ConcentrationID
+JOIN ApplicantTypes at on at.applicantTypeID = ct.applicantTypeID
+JOIN Terms t on t.TermID = ct.TermID
+JOIN ConcentrationDetails cd on cd.ConcentrationID = dc.ConcentrationID
+JOIN Departments dep on dep.DepartmentID = cd.DepartmentID
+LEFT JOIN ConcentrationHarvardOptions ho on ho.concentrationID = dc.concentrationID
+LEFT JOIN HarvardOptions op on op.optionID = ho.optionID
+LEFT JOIN ConcentrationHarvardAreasOfInterest hai on hai.concentrationID = dc.concentrationID
+LEFT JOIN HarvardAreasOfInterest area on area.areaofinterestID = hai.areaofinterestID
+Where  cd.sophasStatus = 1
+AND ct.sophasstatus = 1
+AND d.DesignationStatus = 1
+AND dc.concentrationStatus = 1
+AND (ct.expireYesNo IS NULL OR ct.expireYesNo = 0)
+order by ms.memberschoolName, DegreeName, ProgramName, concentrationName

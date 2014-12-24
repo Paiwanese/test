@@ -1,0 +1,10 @@
+Select designationID,degreename,programname,'Fall 2011' As Term
+From designations 
+Where designationID in (Select d.designationID
+From designations d
+JOIN Concentrations c on d.designationID = c.designationID
+JOIN ConcentrationDetails cd on c.concentrationID = cd.concentrationID
+JOIN concentrationterms ct on cd.concentrationID = ct.concentrationID
+JOIN terms t on t.termID = ct.termID
+where ct.termID = 10)
+order by degreename,programName

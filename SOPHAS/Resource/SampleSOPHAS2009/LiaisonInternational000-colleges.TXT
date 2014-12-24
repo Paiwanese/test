@@ -1,0 +1,3 @@
+20097654321|4988|002328|WASHTENAW COMMUNITY COLLEGE|||Ann Arbor|US|United States|Undergraduate|1|2000|4|2000|MI|Michigan|218|None||No Degree Planned|No|||1|NO ANSWER||||
+20097654321|5877|003216|PORTLAND STATE UNIVERSITY|||Portland|US|United States|Graduate|9|2005|12|2007|OR|Oregon|177|M.P.H.   Master of Public Health||Degree Expected|No|12|2007|53|HEALTH EDUCATION||||
+20097654321|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|||Ann Arbor|US|United States|Undergraduate|9|2000|12|2003|MI|Michigan|57|B.S.   Bachelor of Science||Degree Awarded|Yes|12|2003|41|ENVIRONMENTAL STUDIES||7|ANTHROPOLOGY|

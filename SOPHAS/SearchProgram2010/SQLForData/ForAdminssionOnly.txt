@@ -1,0 +1,9 @@
+SELECT     d.DesignationID,ms.memberschoolName, dt.degreeName AS StandardizeDegreeName, 
+d.degreeName,d.programName, c.ConcentrationName,d.designationStatus, c.ConcentrationStatus
+FROM         Concentrations c
+JOIN Designations d on d.DesignationID = c.DesignationID
+JOIN Memberschools ms on ms.memberschoolID = d.memberschoolID
+JOIN DegreeTypes dt on dt.degreetypeID =d.degreetypeID
+WHERE     (ConcentrationName LIKE '%admis%')or ProgramName like '%admis%' 
+OR d.degreetypeID = 84
+order by designationID

@@ -1,0 +1,52 @@
+20097654321|21898|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Spring|Quarter|2007|Quantitative Research Design|PHE 521|3|Graduate|3|Math/Statistics|A-|A-|3.7|3.00|||1|Not Applicable
+20097654321|21899|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Spring|Quarter|2007|Community Organizing|PHE 517|3|Graduate|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21900|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Spring|Quarter|2007|Intern: Josiah Hill Clinic|PHE 504|3|Graduate|5|Other|I|None|N/A|3.00|||3|Incomplete
+20097654321|21901|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Spring|Quarter|2007|GA Practicum|IST 509A|3|Graduate|5|Other|P|None|N/A|2.00|||1|Not Applicable
+20097654321|21903|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Winter|Quarter|2007|Hlth Promo Prog Plan|PHE 550|3|Graduate|5|Other|A-|A-|3.7|4.00|||1|Not Applicable
+20097654321|21904|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Winter|Quarter|2007|Mass Media & Health|PHE 504|3|Graduate|4|Social/Behavioral Science|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21905|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Winter|Quarter|2007|Prog Eval/Mgmt Health|PA 588|3|Graduate|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21907|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Winter|Quarter|2007|GA Practicum|IST 509A|3|Graduate|5|Other|P|None|N/A|2.00|||1|Not Applicable
+20097654321|21908|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Fall|Quarter|2006|Qualitative Research Design|PHE 520|3|Graduate|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21911|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Fall|Quarter|2006|Foundations Public Health|PHE 511|3|Graduate|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21912|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Fall|Quarter|2006|Global Political Ecology|EPFA 510|3|Graduate|5|Other|A|A|4.0|4.00|||1|Not Applicable
+20097654321|21914|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Fall|Quarter|2006|GA Practicum|IST 509A|3|Graduate|5|Other|P|None|N/A|2.00|||1|Not Applicable
+20097654321|21918|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Spring|Quarter|2006|Health Systems Org|PA 574|3|Graduate|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21919|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Spring|Quarter|2006|Biostats|PA 699, PHPM 524|3|Graduate|3|Math/Statistics|A|A|4.0|4.00|||1|Not Applicable
+20097654321|21921|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Winter|Quarter|2006|Health Policy|PA 571|3|Graduate|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21924|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Winter|Quarter|2006|Epidemiology|PHE 535|3|Graduate|3|Math/Statistics|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21926|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Winter|Quarter|2006|Environmental Health|PHE 580|3|Graduate|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21931|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Fall|Quarter|2005|Grantwriting for Nonprofits|PA 525|3|Graduate|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|21935|5877|003216|PORTLAND STATE UNIVERSITY|Graduate|Fall|Quarter|2005|Principles of Health Behavior|PHE 512|3|Graduate|4|Social/Behavioral Science|A|A|4.0|3.00|||1|Not Applicable
+20097654321|80874|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2000|Gen-Inorganic-Lab|CHEM 125|1|Lower-division (Fr/So)|1|Biology/Chemistry/Physics and Life Science|B|B|3.0|2.00|||1|Not Applicable
+20097654321|80875|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2000|G Chem&R Princ|CHEM 130|1|Lower-division (Fr/So)|1|Biology/Chemistry/Physics and Life Science|B|B|3.0|3.00|||1|Not Applicable
+20097654321|80876|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2000|Writing&Literature|ENGLISH 124|1|Lower-division (Fr/So)|5|Other|A|A|4.0|4.00|||1|Not Applicable
+20097654321|80877|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2000|Review of Elem French|FRENCH 103|1|Lower-division (Fr/So)|5|Other|A-|A-|3.7|4.00|||1|Not Applicable
+20097654321|80878|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2001|Intro Anthro|AHTHRCULT 101|1|Lower-division (Fr/So)|4|Social/Behavioral Science|A-|A-|3.7|4.00|||1|Not Applicable
+20097654321|80880|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2001|Intro Biology|BIOLOGY 162|1|Lower-division (Fr/So)|1|Biology/Chemistry/Physics and Life Science|B-|B-|2.7|5.00|||1|Not Applicable
+20097654321|80881|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2001|Second-Year French|FRENCH 231|1|Lower-division (Fr/So)|5|Other|A-|A-|3.7|4.00|||1|Not Applicable
+20097654321|80885|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2001|Calculus I|MATH 115|1|Lower-division (Fr/So)|3|Math/Statistics|A-|A-|3.7|4.00|||1|Not Applicable
+20097654321|80888|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2001|Anthro of Childhood|ANTHRCULT 329|2|Upper-division (Jr/Sr)|4|Social/Behavioral Science|A|A|4.0|4.00|||1|Not Applicable
+20097654321|80889|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2001|Principle Econ I|ECON 101|1|Lower-division (Fr/So)|5|Other|B-|B-|2.7|4.00|||1|Not Applicable
+20097654321|80890|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2001|Culture, Adaptation & Environ|NRE 256|1|Lower-division (Fr/So)|4|Social/Behavioral Science|A|A|4.0|3.00|||1|Not Applicable
+20097654321|80891|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2001|Woody Plants|NRE 337|2|Upper-division (Jr/Sr)|1|Biology/Chemistry/Physics and Life Science|B|B|3.0|4.00|||1|Not Applicable
+20097654321|80893|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2002|Intro Environ Policy|NRE 210|1|Lower-division (Fr/So)|5|Other|A-|A-|3.7|3.00|||1|Not Applicable
+20097654321|80894|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2002|Consrv BioDiversity|NRE 317|2|Upper-division (Jr/Sr)|1|Biology/Chemistry/Physics and Life Science|B|B|3.0|3.00|||1|Not Applicable
+20097654321|80895|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2002|Psy Env Stewardship|NRE 361|2|Upper-division (Jr/Sr)|4|Social/Behavioral Science|A|A|4.0|3.00|||1|Not Applicable
+20097654321|80896|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2002|Natural Resource Econ|NRE 375|2|Upper-division (Jr/Sr)|3|Math/Statistics|A-|A-|3.7|3.00|||1|Not Applicable
+20097654321|80897|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2002|Australia Natl Parks Intern|STDABRD 370|2|Upper-division (Jr/Sr)|5|Other|A+|A+|4.0|8.00|||1|Not Applicable
+20097654321|80898|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2002|Plants & People|STDABRD 371|2|Upper-division (Jr/Sr)|5|Other|A-|A-|3.7|2.00|||1|Not Applicable
+20097654321|80899|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2002|Marine Environment|STDABRD 371|2|Upper-division (Jr/Sr)|5|Other|A-|A-|3.7|4.00|||1|Not Applicable
+20097654321|80900|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2002|Aboriginal Heritage|STDABRD 371|2|Upper-division (Jr/Sr)|5|Other|B+|B+|3.3|2.00|||1|Not Applicable
+20097654321|80901|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2003|Intro to Geology|GEOSCI 117|1|Lower-division (Fr/So)|1|Biology/Chemistry/Physics and Life Science|B|B|3.0|5.00|||1|Not Applicable
+20097654321|80903|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2003|Intro to Env Analysis|NRE 239|1|Lower-division (Fr/So)|3|Math/Statistics|A|A|4.0|4.00|||1|Not Applicable
+20097654321|80905|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2003|Junior Honors Seminar|NRE 399|2|Upper-division (Jr/Sr)|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|80907|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Winter|Semester|2003|Hist of Human Interaction Land|NRE 403|2|Upper-division (Jr/Sr)|5|Other|A+|A+|4.0|3.00|||1|Not Applicable
+20097654321|80908|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Spring|Semester|2003|Food, Land, & Society|ENVIRON 318|2|Upper-division (Jr/Sr)|5|Other|P|None|N/A|6.00|||1|Not Applicable
+20097654321|80910|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Spring|Semester|2003|Special Prob & Res UG|NRE 300|2|Upper-division (Jr/Sr)|5|Other|A|A|4.0|1.00|||1|Not Applicable
+20097654321|80912|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2003|Thought & Meaning|ANTHRCUL 330|2|Upper-division (Jr/Sr)|4|Social/Behavioral Science|A-|A-|3.7|4.00|||1|Not Applicable
+20097654321|80914|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2003|Chinese Soc & Culture|ANTHRCULT 402|2|Upper-division (Jr/Sr)|4|Social/Behavioral Science|A-|A-|3.7|3.00|||1|Not Applicable
+20097654321|80916|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2003|Environmental Law|ENVIRON 475|2|Upper-division (Jr/Sr)|5|Other|A-|A-|3.7|3.00|||1|Not Applicable
+20097654321|80919|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2003|Amnerican Suburbia|HISTORY 364|2|Upper-division (Jr/Sr)|5|Other|A-|A-|3.7|4.00|||1|Not Applicable
+20097654321|80923|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2003|Nat Resource Statistics|NRE 438|2|Upper-division (Jr/Sr)|3|Math/Statistics|A|A|4.0|4.00|||1|Not Applicable
+20097654321|122448|4988|002328|WASHTENAW COMMUNITY COLLEGE|Undergraduate|Winter|Semester|2000|Intro to Philosophy|PHIL 232|1|Lower-division (Fr/So)|5|Other|A|A|4.0|3.00|||1|Not Applicable
+20097654321|155113|4982|002325|UNIVERSITY OF MICHIGAN-ANN ARBOR|Undergraduate|Fall|Semester|2000|AP Credit|AP|1|Lower-division (Fr/So)|5|Other|CR|None|N/A|6.00|||7|Advanced Placement

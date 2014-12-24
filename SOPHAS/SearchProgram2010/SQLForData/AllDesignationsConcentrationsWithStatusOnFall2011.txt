@@ -1,0 +1,9 @@
+Select d.designationID,d.degreename,d.programname, c.concentrationname,d.designationstatus ,
+c.concentrationstatus, cd.sophasstatus,ct.sophasstatus as IncludeinApplicantsPortal, cd.searchenabled,ct.ExpireYesNo,  t.fullterm
+From designations d
+JOIN Concentrations c on d.designationID = c.designationID
+JOIN ConcentrationDetails cd on c.concentrationID = cd.concentrationID
+JOIN concentrationterms ct on cd.concentrationID = ct.concentrationID
+JOIN terms t on t.termID = ct.termID
+where ct.termID = 10
+order by d.degreename,d.programName 

@@ -1,0 +1,40 @@
+SELECT     c.concentrationID,t.FullTerm, ms.memberschoolName, d.DegreeName, 
+d.ProgramName,c.concentrationName, a.applicantType,
+CASE WHEN cd.DistanceLearningStatus = 2 THEN 'Both'
+WHEN cd.DistanceLearningStatus = 1  THEN 'Yes'
+ELSE 'No'
+END AS DistanceLearningStatus,   
+case when cd.AcceleratedProgram = 1 
+then 'Yes' 
+else 'No' end AS AcceleratedProgram
+
+FROM Designations d 
+INNER JOIN Concentrations c ON d.DesignationID = c.DesignationID
+INNER JOIN ConcentrationDetails cd ON cd.ConcentrationID = c.ConcentrationID
+INNER JOIN ConcentrationTerms ct ON cd.ConcentrationID = ct.ConcentrationID
+JOIN MemberSchools ms on ms.memberSchoolID = d.memberSchoolID
+JOIN ApplicantTypes a on a.applicantTypeID = ct.applicantTypeID
+JOIN Terms t on t.TermID = ct.TermID 
+WHERE d.DesignationStatus = 1
+AND c.ConcentrationStatus = 1
+AND ct.termID = 10 
+AND ((expireYesNo is null) OR (ExpireYesNo = 0))
+AND cd.SearchEnabled = 1
+ORDER BY ms.memberschoolName, d.DegreeName, d.ProgramName,c.concentrationName
+
+
+
+SELECT   d.DegreeName, 
+d.ProgramName,c.concentrationName, a.applicantType, ct.softdeadline,
+ ct.harddeadline,t.FullTerm, ms.memberschoolName,ct.sophasstatus, cd.SearchEnabled, ct.expireYesNo
+FROM Designations d 
+INNER JOIN Concentrations c ON d.DesignationID = c.DesignationID
+INNER JOIN ConcentrationDetails cd ON cd.ConcentrationID = c.ConcentrationID
+INNER JOIN ConcentrationTerms ct ON cd.ConcentrationID = ct.ConcentrationID
+JOIN MemberSchools ms on ms.memberSchoolID = d.memberSchoolID
+JOIN ApplicantTypes a on a.applicantTypeID = ct.applicantTypeID
+JOIN Terms t on t.TermID = ct.TermID 
+WHERE d.DesignationStatus = 1
+AND c.ConcentrationStatus = 1
+AND ct.termID = 10 
+ORDER BY  d.DegreeName, d.ProgramName,c.concentrationName

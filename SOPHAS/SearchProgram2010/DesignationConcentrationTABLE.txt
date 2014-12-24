@@ -1,0 +1,13 @@
+
+DesignationConcentrationID	int	Unchecked
+
+DesignationID	int	Checked
+
+ConcentrationID	int	Checked
+
+ConcentrationStatus	int	Checked
+
+ConcentrationStatusLastModified	datetime	Checked
+
+ConcentrationStatusLastModifiedBy	int	Checked
+		

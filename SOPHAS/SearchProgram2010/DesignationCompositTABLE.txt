@@ -1,0 +1,15 @@
+
+DesignationID	int	Unchecked
+
+MemberSchoolID	int	Checked
+
+DegreeID	int	Checked
+
+ProgramID	int	Checked
+
+DesignationStatus	int	Checked
+
+DesignationStatusLastModified	datetime	Checked
+
+DesignationStatusLastModifiedBy	int	Checked
+		

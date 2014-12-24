@@ -1,0 +1,20 @@
+SELECT ms.memberName, d.degreeName, d.programName,
+dc.ConcentrationName, t.fullterm as Term, at.applicantType, ct.softdeadline+' 11:59:59 PM' as SoftDeadline, ct.harddeadline+' 11:59:59 PM' as HardDeadline,
+dep.DepartmentName, ct.sophasstatus
+FROM  Designations d
+JOIN members ms on ms.memberID = d.memberID
+JOIN SOPHAS ss on ss.memberID = ms.memberID
+JOIN DegreeTypes deg on deg.degreeTypeID = d.DegreeTypeID
+JOIN Concentrations dc on d.DesignationID =dc.DesignationID
+JOIN ConcentrationTerms ct on dc.ConcentrationID = ct.ConcentrationID
+JOIN ApplicantTypes at on at.applicantTypeID = ct.applicantTypeID
+JOIN Terms t on t.TermID = ct.TermID
+JOIN ConcentrationDetails cd on cd.ConcentrationID = dc.ConcentrationID
+JOIN Departments dep on dep.DepartmentID = cd.DepartmentID
+LEFT JOIN ConcentrationHarvardOptions ho on ho.concentrationID = dc.concentrationID
+LEFT JOIN HarvardOptions op on op.optionID = ho.optionID
+LEFT JOIN ConcentrationHarvardAreasOfInterest hai on hai.concentrationID = dc.concentrationID
+LEFT JOIN HarvardAreasOfInterest area on area.areaofinterestID = hai.areaofinterestID
+Where dc.concentrationStatus = 1
+AND (ct.expireYesNo IS NULL OR ct.expireYesNo = 0)
+order by ms.memberName, DegreeName, ProgramName, concentrationName

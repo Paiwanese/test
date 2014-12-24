@@ -1,0 +1,6 @@
+SELECT     ms.memberschoolname, sq.questionsortorder, sq.questiontext,  sa.AnswerText
+FROM        SOPHASQuestions sq 
+JOin SOPHASSchoolAnswers sa on  sa.questionID = sq.questionID
+Join Memberschools ms on ms.memberschoolID = sa.memberschoolID
+
+order by ms.memberschoolname, sq.questionsortorder

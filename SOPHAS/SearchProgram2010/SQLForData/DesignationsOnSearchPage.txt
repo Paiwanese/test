@@ -1,0 +1,35 @@
+Select designationID
+From designations
+Where designationID in (
+Select  c.designationID 
+From Concentrations c
+JOIN concentrationDetails cd on c.concentrationID = cd.concentrationID
+Where c.concentrationID IN (Select concentrationID 
+from concentrationterms 
+Where((expireYesNo is null) OR (ExpireYesNo = 0)) )
+AND cd.searchenabled = 1
+AND c.concentrationStatus = 1
+)
+and DesignationStatus =1
+
+
+
+
+
+
+
+Select count(designationID),designationID
+From designations
+Where designationID in 
+(Select  c.designationID 
+From Concentrations c
+JOIN concentrationDetails cd on c.concentrationID = cd.concentrationID
+Where c.concentrationID IN 
+(Select concentrationID 
+from concentrationterms 
+Where((expireYesNo is null) OR (ExpireYesNo = 0)) )
+AND cd.searchenabled = 1
+AND c.concentrationStatus = 1
+)and DesignationStatus =1
+Group by designationID
+order by count(designationID) desc
